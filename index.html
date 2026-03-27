@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="./imagens/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Igue Bike</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> <img src="./imagens/logo.png" aria-placeholder="Logo da Marca IGUE Bike"
+            alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./imagens/logo-mobile.png"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nossa história</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#produtos">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#servicos">Serviços</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contato">Contato</a>
+              </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="banners banner-1 d-flex flex-column justify-content-center text-center"> <!-- plano de fundo 1 -->
+      <div class="banner-titulo bg-body-secondary py-5">
+        <h2>Sua Bicicleta em Boas Mãos</h2>
+        <p>Encontre bicicletas de qualidade, peças confiáveis e serviços especializados para manter sua bike sempre
+          pronta para qualquer pedalada. Aqui você tem tudo o que precisa em um só lugar.</p>
+      </div>
+    </section>
+    <!-- serviços que o IGUE BIKE oferece -->
+    <section id="servicos" class="py-5">
+      <h2 class="pb-1 text-center">Nossos Serviços</h2>
+      <div class="container d-flex justify-content-around flex-wrap">
+        <!-- serviço 1 -->
+        <div class="card" style="width: 18rem;">
+          <img src="./imagens/servico1.png" class="card-img-top" alt="Descrição da imagem" height="180">
+          <div class="card-body">
+            <h5 class="card-title">Venda de Bicicletas</h5>
+            <p class="card-text">Trabalhamos com bicicletas de qualidade para diferentes estilos de pedal, desde modelos
+              urbanos até opções para trilhas e lazer. Encontre a bike ideal para o seu dia a dia ou aventura.</p>
+            <a href="#" class="btn btn-outline-dark w-100" data-bs-toggle="offcanvas" data-bs-target="#card1"
+              aria-controls="offcanvasRight">Saiba Mais</a>
+          </div>
+        </div>
+        <!-- serviço 2 -->
+        <div class="card" style="width: 18rem;">
+          <img src="./imagens/servico2.png" class="card-img-top" alt="Descrição da imagem" height="180">
+          <div class="card-body">
+            <h5 class="card-title">Peças e Acessórios para Bicicletas</h5>
+            <p class="card-text">Temos uma linha completa de peças e acessórios para manter sua bicicleta sempre em
+              ótimo estado. Oferecemos pneus, câmaras, correntes, freios, capacetes e diversos itens que garantem mais
+              segurança, conforto e desempenho.</p>
+            <a href="#" class="btn btn-outline-dark w-100" data-bs-toggle="offcanvas" data-bs-target="#card1"
+              aria-controls="offcanvasRight">Saiba Mais</a>
+          </div>
+        </div>
+        <!-- serviço 3 -->
+        <div class="card" style="width: 18rem;">
+          <img src="./imagens/servico3.png" class="card-img-top" alt="Descrição da imagem" height="180">
+          <div class="card-body">
+            <h5 class="card-title">Manutenção e Conserto Especializado</h5>
+            <p class="card-text">Conte com um serviço profissional de manutenção e reparo para sua bicicleta. Realizamos
+              ajustes, revisões e consertos com cuidado e precisão para garantir que sua bike esteja sempre pronta para
+              rodar.</p>
+            <a href="#" class="btn btn-outline-dark w-100" data-bs-toggle="offcanvas" data-bs-target="#card1"
+              aria-controls="offcanvasRight">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="banners banner-2 d-flex flex-column justify-content-center text-center"> <!-- plano de fundo 2 -->
+    </section>
+    <!-- Produtos IGUE Bike -->
+    <section id="produtos" class="py-5">
+      <h2 class="pb-1 text-center">Nossos Produtos</h2>
+      <div class="container d-flex justify-content-around flex-wrap">
+        <!-- PRODUTO 1 (Bicicletas)" -->
+        <div class="card border-0 btn" data-bs-toggle="modal" data-bs-target="#bicicletas" style="width: 18rem;">
+          <img src="./imagens/produto1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text text-center fw-bold">Bicicletas</p>
+          </div>
+        </div>
+        <!-- PRODUTO 2 (Pneus e Câmaras)" -->
+        <div class="card border-0 btn" data-bs-toggle="modal" data-bs-target="#pneus" style="width: 18rem;">
+          <img src="./imagens/produto2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text text-center fw-bold">Pneus e Câmaras</p>
+          </div>
+        </div>
+        <!-- PRODUTO 3 (Peças para Bicicletas)" -->
+        <div class="card border-0 btn" data-bs-toggle="modal" data-bs-target="#pecas" style="width: 18rem;">
+          <img src="./imagens/produto3.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text text-center fw-bold">Peças para Bicicletas</p>
+          </div>
+        </div>
+        <!-- PRODUTO 4 (Capacetes e Segurança)" -->
+        <div class="card border-0 btn" data-bs-toggle="modal" data-bs-target="#capacetes" style="width: 18rem;">
+          <img src="./imagens/produto4.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text text-center fw-bold">Capacetes e Segurança</p>
+          </div>
+        </div>
+        <!-- PRODUTO 5 (Acessórios para Bike)" -->
+        <div class="card border-0 btn" data-bs-toggle="modal" data-bs-target="#acessorios" style="width: 18rem;">
+          <img src="./imagens/produto5.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text text-center fw-bold">Acessórios para Bike</p>
+          </div>
+        </div>
+        <!-- PRODUTO 6 (Manutenção e Ferramentas)" -->
+        <div class="card border-0 btn" data-bs-toggle="modal" data-bs-target="#ferramentas" style="width: 18rem;">
+          <img src="./imagens/produto6.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text text-center fw-bold">Manutenção e Ferramentas</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- BANNER 3 -->
+    <section class="banners banner-3 d-flex flex-column justify-content-center text-center"> <!-- plano de fundo 3 -->
+      <div class="banner-titulo">
+        <h2></h2>
+        <p></p>
+      </div>
+    </section>
+  </main>
+  <!--card1-->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="card1" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Venda de Bicicletas</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Por que comprar conosco?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Aqui você encontra bicicletas de qualidade, com excelente custo-benefício e
+                garantia.</strong>Trabalhamos com marcas confiáveis e oferecemos atendimento personalizado para garantir
+              que você faça a melhor escolha. Além disso, disponibilizamos suporte pós-venda para sua tranquilidade.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Qualidade e garantia
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Trabalhamos apenas com bicicletas de procedência garantida.</strong>Todos os modelos passam por
+              revisão antes da entrega, assegurando segurança e durabilidade para você pedalar com tranquilidade.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- CLICK Produtos -->
+  <!-- Bicicleta (produto 1) -->
+  <div class="modal fade" id="bicicletas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Bicicletas</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Bicicletas Urbanas</p>
+          <p>Mountain Bike (MTB)</p>
+          <p>Bicicletas Infantis</p>
+          <p>Bicicletas de Passeio</p>
+          <p>Bicicletas Aro 29</p>
+          <p>Bicicletas Aro 26</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="funnel-sans"></p>
+  <!-- Pneus e Camêras (produto 2) -->
+  <div class="modal fade" id="pneus" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Pneus e Camêras</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Pneus MTB</p>
+          <p>Pneus Aro 29</p>
+          <p>Pneus Aro 26</p>
+          <p>Câmaras de Ar</p>
+          <p>Protetores de Câmara</p>
+          <p>Kits de reparo</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="funnel-sans"></p>
+  <!-- Peças para Bicicletas (produto 3) -->
+  <div class="modal fade" id="pecas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Peças para Bicicletas</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Correntes</p>
+          <p>Câmbios e Passadores</p>
+          <p>Freios e Pastilhas</p>
+          <p>Pedais</p>
+          <p>Catracas</p>
+          <p>Guidão e Mesa</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="funnel-sans"></p>
+  <!-- Capacetes e segurança (produto 4) -->
+  <div class="modal fade" id="capacetes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Capacetes e segurança</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Capacetes Adulto</p>
+          <p>Capacetes Infantil</p>
+          <p>Luvas de Ciclismo</p>
+          <p>Luzes de Segurança</p>
+          <p>Espelhos Retrovisores</p>
+          <p>Cadeados para Bicicleta</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="funnel-sans"></p>
+  <!-- Acessórios para Bike (produto 5) -->
+  <div class="modal fade" id="acessorios" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Acessórios para Bike</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Suporte para Garrafa</p>
+          <p>Garrafas / Squeeze</p>
+          <p>Campainhas</p>
+          <p>Bolsas para Bike</p>
+          <p>Suporte para Celular</p>
+          <p>Bagageiros</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="funnel-sans"></p>
+  <!-- Manutenção e Ferramentas (produto 6) -->
+  <div class="modal fade" id="ferramentas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Manutenção e Ferramentas</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Bombas de Ar</p>
+          <p>Kits de Ferramentas</p>
+          <p>Chaves para Bike</p>
+          <p>Lubrificantes</p>
+          <p>Limpadores de Corrente</p>
+          <p>Suportes de Manutenção</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="funnel-sans"></p>
+  <!-- RODAPÉ (localização e contato) -->
+  <footer>
+    <section id="contato" class="container py-5 my-5">
+      <div class="row align-items-center g-4">
+        <div class="col-md-5">
+          <h2 class="display-5 fw-bold mb-4">Nossa localização!</h2>
+          <p class="lead">Estamos prontos para te atender! Venha visitar nossa loja, conhecer nossos produtos e contar
+            com nosso serviço especializado para cuidar da sua bicicleta.</p>
+          <div class="d-flex align-items-center mb-3">
+            <i class="bi bi-geo-alt-fill text-danger me-3 fs-3"></i>
+            <span>Avenida Senador Feijó, 421 </span>
+          </div>
+
+          <div class="d-flex align-items-center mb-3">
+            <i class="bi bi-clock-fill fs-3 me-3 text-brown"></i>
+            <span>Segunda a Sexta: 9h às 18h </span>
+          </div>
+          <a href="https://maps.app.goo.gl/e5xrFojwXVsVoyhQ8" target="_blank" class="btn btn-outline-dark mt-3">
+            Abrir o Google Maps
+          </a>
+        </div>
+        <div class="col-md-7">
+          <div class="ratio ratio-16x9 shadow rounded overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.4441704342385!2d-46.32891902377737!3d-23.9447287757901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce03778055f0bb%3A0x996d833d40b5a60c!2sAv.%20Senador%20Feij%C3%B3%2C%20421%20-%20Vila%20Nova%2C%20Santos%20-%20SP%2C%2011013-162!5e0!3m2!1spt-BR!2sbr!4v1773236289735!5m2!1spt-BR!2sbr"
+              style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+</body>
+
+</html>
